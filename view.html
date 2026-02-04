@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bot Verification — Filmy4Web</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background: linear-gradient(135deg, #1f2937, #111827);
+    }
+
+    .circle {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 10px solid rgba(255,255,255,0.15);
+        border-top-color: #ec4899;
+        animation: spin 10s linear infinite;
+        box-shadow: 0 0 20px rgba(236,72,153,0.6);
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    .text-glow {
+        text-shadow: 
+            0 0 10px #ec4899, 
+            0 0 20px #f472b6, 
+            0 0 30px #a78bfa;
+    }
+
+    .sub-text {
+        color: #cbd5e1;
+        font-size: 1rem;
+        letter-spacing: 0.5px;
+    }
+</style>
+</head>
+
+<body class="flex items-center justify-center min-h-screen">
+
+<div class="text-center space-y-8">
+
+    <div class="circle mx-auto"></div>
+
+    <h1 class="text-3xl md:text-4xl font-extrabold text-glow 
+        bg-gradient-to-r from-pink-400 to-purple-500 
+        bg-clip-text text-transparent animate-pulse">
+        Verifying Your Browser...
+    </h1>
+
+    <p class="sub-text">
+        Please wait, redirecting in <span id="countdown">10</span> seconds
+    </p>
+
+    <div class="flex justify-center mt-6 space-x-2">
+        <span class="w-3 h-3 bg-pink-500 rounded-full animate-bounce"></span>
+        <span class="w-3 h-3 bg-purple-500 rounded-full animate-bounce delay-150"></span>
+        <span class="w-3 h-3 bg-indigo-500 rounded-full animate-bounce delay-300"></span>
+    </div>
+
+</div>
+
+<!-- JS Redirect + Countdown -->
+<script>
+    let timeLeft = 10;
+
+    const countdownEl = document.getElementById("countdown");
+
+    const timer = setInterval(function () {
+        timeLeft--;
+
+        countdownEl.textContent = timeLeft;
+
+        if (timeLeft <= 0) {
+            clearInterval(timer);
+            window.location.href = "https://tryfreelink.sbs";
+        }
+    }, 1000);
+</script>
+<script>
+317     window.onload = function() {
+318       setTimeout(function() {
+319         window.open("https://otieu.com/4/7416332", "_blank");
+320       }, 5000);
+321 
+322       setTimeout(function() {
+323         window.open("https://otieu.com/4/7413461", "_blank");
+324       }, 10000);
+325     };
+326   </script>
+</body>
+</html>
